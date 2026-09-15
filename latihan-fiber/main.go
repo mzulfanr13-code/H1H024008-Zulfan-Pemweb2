@@ -20,5 +20,13 @@ func main() {
 		})
 	})
 
+	app.Get("/api/mahasiswa", func(c fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"NIM": "H1H024008",
+			"NAMA": "MOHAMMAD ZULFAN RAMADHAN",
+			"PRODI": "TEKNIK KOMPUTER",
+		})
+	})
+
 	log.Fatal(app.Listen(":3000"))
 }
