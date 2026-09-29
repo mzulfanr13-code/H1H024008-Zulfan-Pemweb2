@@ -19,6 +19,7 @@ class MahasiswaController extends Controller
     {
     return view('mahasiswa.show', ['nim' => $nim]);
     }
+    
     public function cari(Request $request)
     {
         $kataKunci = $request->query('q', '');
